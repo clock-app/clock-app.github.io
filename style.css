@@ -209,28 +209,60 @@ body {
   opacity: 0.06;
 }
 
-.switch {
+
+.con-switch {
   width: 100px;
-  height: 335px;
-  border-radius: 40px;
+  background: rgba(99, 107, 144,.15);
   position: relative;
-  transition: all .15s ease;
-  overflow: auto;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  background: rgba(20, 24, 28, 1);
+  height: 48px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+.con-switch:active .circle{
+  width: 50px;
+}
+.con-switch:active  .input:checked ~ .circle {
+  left: 40px;
+}
+    
+.input {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
 }
 
-.btn {
-  width: 80px;
-  height: 80px;
-  position: relative;
-  margin: 10px;
-  background: rgba(0,8,16,1);
-  border-radius: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 1);
+.con-switch:hover {
+  background: rgba(99, 107, 144,.25);
+}
+
+.input:checked ~ .circle {
+  left: 52px;
+  opacity: 1;
+}
+
+.circle {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 5px;
+  width: 38px;
+  height: 38px;
+  border-radius: 20px;
+  background: rgb(99 107 144);
+  transition: all .25s ease;
+  box-shadow: 0px 10px 20px 0px rgba(99, 107, 144,.35);
+  opacity: .4;
+}
+
+.light {
+  background-color: #efefef;
+}
+
+.dark {
+  background-color: #1D1F20;
 }
