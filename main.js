@@ -49,11 +49,14 @@ setInterval(function () {
 
 let checkInput = document.getElementById('check');
 checkInput.checked = false;
+let textElement = document.getElementById('themes')
 
 checkInput.addEventListener('click', (e) => {
   if (checkInput.checked === true) {
     document.body.className = 'light';
+    textElement.className = 'dark-text'
   } else {
     document.body.className = 'dark';
+    textElement.className = 'light-text'
   }
 })
