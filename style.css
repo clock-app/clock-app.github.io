@@ -209,6 +209,9 @@ body {
   opacity: 0.06;
 }
 
+label {
+  margin: 20px;
+}
 
 .con-switch {
   width: 100px;
@@ -261,8 +264,20 @@ body {
 
 .light {
   background-color: #efefef;
+  transition: ease 0.5s;
+}
+
+.light-text {
+  color: #efefef;
+  transition: ease 0.5s;
 }
 
 .dark {
   background-color: #1D1F20;
+  transition: ease 0.5s;
+}
+
+.dark-text {
+  color: #1D1F20;
+  transition: ease 0.5s;
 }
