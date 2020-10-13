@@ -17,11 +17,189 @@ body {
   align-items: center;
 }
 
-.clockWrapper {
+.clock-wrapper {
+  width: 100%;
+  height: 100%;
   position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.digit {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 160px;
+  margin: 10px;
+  text-align: left;
+}
+
+.colon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50px;
+  height: 160px;
+  text-align: center;
+}
+
+.led {
+  position: absolute;
+  opacity: 0.06;
+  border-radius:5px;
+  transition: opacity 0.3s;
+}
+
+.vertical {
+  width: 10px; 
+  height: 60px;
+  background-color: #64C7CC;
+  border-radius:5px;
+}
+
+.horizontal {
+  width: 60px; 
+  height: 10px;
+  background-color: #64C7CC;
+  border-radius:5px;
+}
+
+.top {
+  top: 6px;
+  left: 11px;
+}
+
+.top.left {
+  top: 15px;
+  left: 0;
+}
+
+.top.right {
+  top: 7px;
+  left: 72px;
+  margin-top: 8px;
+}
+
+.middle {
+  top: 74px;
+  left: 11px;
+}
+
+.bottom.left {
+  top: 84px;
+  left: 0;
+}
+
+.bottom.right {
+  top: 84px;
+  left: 72px;
+}
+
+.bottom {
+  top: 143px;
+  left: 11px;
+}
+
+.top-point,
+.bottom-point {
+  background-color: #64C7CC;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.zero * {
+  opacity: 1;
+}
+
+.zero .middle {
+  opacity: 0.06;
+}
+
+.one * {
+  opacity: 0.06;
+}
+
+.one .top.right,
+.one .bottom.right {
+  opacity: 1;
+}
+
+.two * {
+  opacity: 1;
+}
+
+.two .top.left,
+.two .bottom.right {
+  opacity: 0.06;
+}
+
+.three * {
+  opacity: 1;
+}
+
+.three .top.left,
+.three .bottom.left {
+  opacity: 0.06;
+}
+
+.four .top,
+.four .bottom {
+  opacity: 0.06;
+}
+
+.four .top.right,
+.four .top.left,
+.four .middle,
+.four .bottom.right {
+  opacity: 1;
+}
+
+.five * {
+  opacity: 1;
+}
+
+.five .top.right,
+.five .bottom.left {
+  opacity: 0.06;
+}
+
+.six * {
+  opacity: 1;
+}
+
+.six .top.right {
+  opacity: 0.06;
+}
+
+.seven * {
+  opacity: 0.06;
+}
+
+.seven .top,
+.seven .bottom.right {
+  opacity: 1;
+}
+
+.seven .top.left {
+  opacity: 0.06;
+}
+
+.eight * {
+  opacity: 1;
+}
+
+.nine * {
+  opacity: 1;
+}
+
+.nine .bottom.left {
+  opacity: 0.06;
 }
