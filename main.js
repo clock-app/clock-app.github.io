@@ -45,3 +45,15 @@ setInterval(function () {
   secondsUnits.className = "digit" + " " + numbersArray[currentTimeArray[5]];
 
 }, 1000);
+
+
+let checkInput = document.getElementById('check');
+checkInput.checked = false;
+
+checkInput.addEventListener('click', (e) => {
+  if (checkInput.checked === true) {
+    document.body.className = 'light';
+  } else {
+    document.body.className = 'dark';
+  }
+})
