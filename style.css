@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body { 
@@ -15,17 +16,39 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-family: 'Quicksand', sans-serif;
 }
 
 .clock-wrapper {
-  width: 70%;
-  height: 500px;
-  position: relative;
+  height: calc(100% - 100px);
+  position: absolute;
+  bottom: 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+#hours-group,
+#minutes-group,
+#seconds-group {
+  display: flex;
+  width: 205px;
+  height: 184px;
 }
 
 .digit {
@@ -211,6 +234,8 @@ body {
 
 label {
   margin: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .con-switch {
@@ -280,4 +305,19 @@ label {
 .dark-text {
   color: #1D1F20;
   transition: ease 0.5s;
+}
+
+@media only screen and (max-width: 500px) {
+  .clock-wrapper {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .colon {
+    width: 100%;
+    height: 50px;
+  }
+
+  label {
+    margin: 10px;
+  }
 }
