@@ -1,6 +1,6 @@
 /**** Colors of the clock and theme ****/
 :root {
-  --led-color: #64C7CC;
+  --led-color: #64ccc3;
   --dark-theme-color: #1D1F20;
   --light-theme-color: #EFEFEF;
 }
@@ -34,6 +34,7 @@ label  {
 /**** Fonts ****/
 h3 {
   font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
 }
 
 /**** Layout ****/
@@ -270,7 +271,7 @@ label {
 
 #switch {
   width: 100px;
-  background: rgba(99, 107, 144,.15);
+  background: rgba(128, 128, 128, 0.2);
   position: relative;
   height: 48px;
   border-radius: 25px;
@@ -300,9 +301,9 @@ label {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: rgb(99, 107, 144);
+  background: rgb(99, 134, 144);
   transition: all .25s ease;
-  box-shadow: 0px 10px 20px 0px rgba(99, 107, 144,.35);
+  box-shadow: 0px 10px 20px 0px rgba(99, 134, 144,.35);
   opacity: .4;
 }
 
@@ -336,6 +337,10 @@ label {
 
 /**** Responsive ****/
 @media only screen and (max-width: 500px) {
+  h3 {
+    font-size: 20px;
+  }
+
   #clock-wrapper {
     flex-direction: column;
     justify-content: flex-end;
@@ -360,6 +365,10 @@ label {
 }
 
 @media only screen and (min-width: 500px) and (max-width: 800px) {
+  h3 {
+    font-size: 20px;
+  }
+  
   #clock-wrapper {
     transform: scale(0.8);
     transform-origin: center;
