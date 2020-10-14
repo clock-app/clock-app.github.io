@@ -4,17 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <title>Clock App</title>
 </head>
 
 <body>
-  <h3 id="themes" class="light-text">Switch to light theme</h3>
-  
-  <label for="check" class="con-switch">
-    <input id="check" class="input" type="checkbox">
-    <div class="circle"></div>
-  </label>
+  <header>
+    <h3 id="themes" class="light-text">Switch to light theme</h3>
+    
+    <label for="check" class="con-switch">
+      <input id="check" class="input" type="checkbox">
+      <div class="circle"></div>
+    </label>
+  </header>
+
   <div class="clock-wrapper">
     <div id="hours-group">
       <div id="hours-tens" class="digit">
@@ -42,7 +46,7 @@
       <div class="bottom-point"></div>
     </div>
 
-    <div id="minutes">
+    <div id="minutes-group">
       <div id="minutes-tens" class="digit">
         <div class="led top horizontal"></div>
         <div class="led top left vertical"></div>
@@ -68,7 +72,7 @@
       <div class="bottom-point"></div>
     </div>
 
-    <div id="seconds">
+    <div id="seconds-group">
       <div id="seconds-tens" class="digit">
         <div class="led top horizontal"></div>
         <div class="led top left vertical"></div>
