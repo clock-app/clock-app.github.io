@@ -9,9 +9,9 @@
 * Particles.js
 
 ## Decisions made:
-* Digital clock: in the modern world for most of the people analog clock doesn't really make sense. People have very fast rhythm of life. Digital clock helps quickly identify time.
+* Digital clock: in the modern world for most of the people analog clock doesn't really make sense. People have very fast rhythm of life. Digital clock helps identify time very quick.
 * Dark and light theme: I would like to give users ability to use more comfortable colors for their screens.
-* Use particles.js: for some people who have time, I decided to add a relaxing background. Particles.js is a lightweight library that fits perfectly.
+* Use particles.js: for some people who have time, I decided to add a relaxing background. Particles.js is a lightweight library that helps to create very nice animated particles.
 
 ## New things tried:
 1. Create dark & light themes: it was my first time creating 2 themes in one application. A few additional lines of code increases user experience.
