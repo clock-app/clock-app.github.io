@@ -338,7 +338,7 @@ label {
 }
 
 .dark-text {
-  color: var(--dark-theme-color);
+  color: #638693;
   transition: ease 0.5s;
 }
 
