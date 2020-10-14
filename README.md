@@ -35,3 +35,12 @@ transform: scale(0.8);
 
 ## Next improvements: 
 * Allow user to switch between 24h and 12h time format.
+
+## You can run locally
+This project is not using any ports.
+* Clone repo
+* Copy path of an `index.html`file and paste in browser.
+
+or
+
+* Click 'Open in default browser '
