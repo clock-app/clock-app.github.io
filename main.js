@@ -46,7 +46,6 @@ setInterval(function () {
 
 }, 1000);
 
-
 let checkInput = document.getElementById('check');
 checkInput.checked = false;
 let textElement = document.getElementById('themes')
@@ -54,9 +53,11 @@ let textElement = document.getElementById('themes')
 checkInput.addEventListener('click', (e) => {
   if (checkInput.checked === true) {
     document.body.className = 'light';
-    textElement.className = 'dark-text'
+    textElement.className = 'dark-text';
+    textElement.textContent = 'Switch to dark theme'
   } else {
     document.body.className = 'dark';
-    textElement.className = 'light-text'
+    textElement.className = 'light-text';
+    textElement.textContent = 'Switch to light theme';
   }
 })
